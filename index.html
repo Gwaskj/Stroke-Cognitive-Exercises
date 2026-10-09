@@ -13,13 +13,15 @@
       Accessible puzzles designed for general cognitive wellness. 
       Suitable for people who enjoy mental challenges, including those who have experienced a stroke.
     </p>
+
+    <!-- FIXED: Navigation moved INSIDE header so white text is visible -->
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="exercises/index.html">Exercises</a>
+      <a href="about/index.html">About</a>
+      <a href="progress/index.html">Progress</a>
+    </nav>
   </header>
-<nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="exercises/index.html">Exercises</a>
-  <a href="about/index.html">About</a>
-  <a href="progress/index.html">Progress</a>
-</nav>
 
   <main class="main">
     <section class="section">
@@ -36,14 +38,15 @@
       <p>
         Tap the matching pairs. Large buttons and high contrast are used to support accessibility.
       </p>
-      <div id="puzzle" class="puzzle"></div>
-      <div id="status" class="status"></div>
+
+      <!-- FIXED: Removed puzzle from homepage -->
+      <a href="exercises/matching.html" class="button">Start Matching Exercise</a>
     </section>
 
     <section class="section">
       <h2>Your activity summary (non-clinical)</h2>
-      <p id="summary">
-        Complete puzzles to see your activity and accuracy here. These are engagement metrics only,
+      <p>
+        Complete puzzles to see your activity and accuracy. These are engagement metrics only,
         not clinical measures.
       </p>
     </section>
@@ -52,7 +55,5 @@
   <footer class="footer">
     <p>&copy; 2026 Cognitive Wellness Exercises. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
