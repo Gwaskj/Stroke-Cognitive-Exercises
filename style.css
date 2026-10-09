@@ -1,0 +1,85 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+.header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 0.5rem auto 0;
+}
+
+.main {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+}
+
+.disclaimer {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(70px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.puzzle-button {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  background: #e5e7eb;
+  color: #111827;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.puzzle-button:focus {
+  outline: 3px solid #2563eb;
+}
+
+.puzzle-button:hover {
+  background: #d1d5db;
+}
+
+.puzzle-button.matched {
+  background: #22c55e;
+  color: #f9fafb;
+}
+
+.puzzle-button.selected {
+  background: #2563eb;
+  color: #f9fafb;
+}
+
+.status {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
