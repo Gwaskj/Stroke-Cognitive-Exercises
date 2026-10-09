@@ -5,6 +5,7 @@ body {
   color: #111827;
 }
 
+/* HEADER */
 .header {
   padding: 1.5rem;
   text-align: center;
@@ -17,6 +18,25 @@ body {
   margin: 0.5rem auto 0;
 }
 
+/* NAVIGATION */
+.nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #f9fafb; /* white text for dark header */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT */
 .main {
   max-width: 900px;
   margin: 1.5rem auto;
@@ -36,6 +56,7 @@ body {
   color: #6b7280;
 }
 
+/* PUZZLE GRID */
 .puzzle {
   display: grid;
   grid-template-columns: repeat(4, minmax(70px, 1fr));
@@ -77,47 +98,7 @@ body {
   font-weight: 600;
 }
 
-.nav {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.nav a {
-  color: #f9fafb;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-.footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.85rem;
-  color: #6b7280;
-}
-
-.nav {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.nav a {
-  color: #f9fafb;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
+/* BUTTON STYLE */
 .button {
   display: inline-block;
   padding: 0.75rem 1.25rem;
@@ -131,4 +112,12 @@ body {
 
 .button:hover {
   background: #1d4ed8;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #6b7280;
 }
